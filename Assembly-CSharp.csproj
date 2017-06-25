@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{09DCB2FE-5F6E-9607-07A6-C53BA87FE5CF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_5_0;UNITY_5_5;UNITY_5;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_SCRIPTING_NEW_CSHARP_COMPILER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_VIDEO;ENABLE_VR;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_32;UNITY_EDITOR_WIN;UNITY_TEAM_LICENSE;UNITY_PRO_LICENSE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Game.cs" />
+     <Compile Include="Assets\Midi\Chunks\Chunk.cs" />
+     <Compile Include="Assets\Midi\Chunks\HeaderChunk.cs" />
+     <Compile Include="Assets\Midi\Chunks\TrackChunk.cs" />
+     <Compile Include="Assets\Midi\Events\ChannelEvents\ChannelAftertouchEvent.cs" />
+     <Compile Include="Assets\Midi\Events\ChannelEvents\ChannelEvent.cs" />
+     <Compile Include="Assets\Midi\Events\ChannelEvents\ControllerEvent.cs" />
+     <Compile Include="Assets\Midi\Events\ChannelEvents\NoteAftertouchEvent.cs" />
+     <Compile Include="Assets\Midi\Events\ChannelEvents\NoteOffEvent.cs" />
+     <Compile Include="Assets\Midi\Events\ChannelEvents\NoteOnEvent.cs" />
+     <Compile Include="Assets\Midi\Events\ChannelEvents\PitchBendEvent.cs" />
+     <Compile Include="Assets\Midi\Events\ChannelEvents\ProgramChangeEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\CopyrightNoticeEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\CuePointEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\EndOfTrackEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\InstrumentNameEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\KeySignatureEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\LyricsEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\MIDIChannelPrefixEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\MarkerEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\MetaEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\SMPTEOffsetEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\SequenceNumberEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\SequenceOrTrackNameEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\SequencerSpecificEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\SetTempoEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\TextEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MetaEvents\TimeSignatureEvent.cs" />
+     <Compile Include="Assets\Midi\Events\MidiEvent.cs" />
+     <Compile Include="Assets\Midi\Events\SysexEvent.cs" />
+     <Compile Include="Assets\Midi\FileParser.cs" />
+     <Compile Include="Assets\Midi\MidiData.cs" />
+     <Compile Include="Assets\Midi\Util\Option\None.cs" />
+     <Compile Include="Assets\Midi\Util\Option\Option.cs" />
+     <Compile Include="Assets\Midi\Util\Option\Some.cs" />
+     <Compile Include="Assets\Midi\Util\VariableLengthUtil.cs" />
+     <Compile Include="Assets\SimonSays.cs" />
+     <Compile Include="Assets\Tuple.cs" />
+     <Compile Include="Assets\Tuple2.cs" />
+     <Compile Include="Assets\Tuple3.cs" />
+     <Compile Include="Assets\Tuple4.cs" />
+     <Compile Include="Assets\Uniduino\Scripts\Arduino.Firmata.cs" />
+     <Compile Include="Assets\Uniduino\Scripts\Arduino.cs" />
+     <Compile Include="Assets\Uniduino\Scripts\SerialPortProxy.cs" />
+     <Compile Include="Assets\Uniduino\Scripts\UniduinoSetup.cs" />
+     <Compile Include="Assets\Uniduino\Tutorials\Analog Read\AnalogRead.cs" />
+     <Compile Include="Assets\Uniduino\Tutorials\Analog Write (PWM)\AnalogWrite.cs" />
+     <Compile Include="Assets\Uniduino\Tutorials\Blink Button\BlinkButton.cs" />
+     <Compile Include="Assets\Uniduino\Tutorials\Blink Timer\Blink.cs" />
+     <Compile Include="Assets\Uniduino\Tutorials\Digital Read\DigitalRead.cs" />
+     <Compile Include="Assets\Uniduino\Tutorials\Servo\Servo.cs" />
+     <Compile Include="Assets\Uniduino\Tutorials\Servo\ServoSlideControl.cs" />
+     <Compile Include="Assets\Uniduino\UniduinoTestPanel\UniduinoTestPanel.cs" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.PlaymodeTestsRunner">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/PlaymodeTestsRunner/UnityEngine.PlaymodeTestsRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.VR">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
